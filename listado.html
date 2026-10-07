@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FCA Tareas — Listado</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-fca">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">FCA Tareas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Iniciar sesión</a></li>
+          <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="formulario.html">Nueva tarea</a></li>
+          <li class="nav-item"><a class="nav-link active" href="listado.html">Listado</a></li>
+          <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca de</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-4">
+    <h2 style="color:var(--azul-fca);">Listado de tareas</h2>
+    <input type="text" id="filtroListado" class="form-control my-3" placeholder="Buscar por nombre o estado...">
+
+    <table class="table table-striped table-hover" id="tablaListado">
+      <thead>
+        <tr><th>#</th><th>Tarea</th><th>Fecha de entrega</th><th>Estado</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Entregar reporte de prácticas</td><td>10/10/2026</td><td><span class="badge badge-pendiente">Pendiente</span></td></tr>
+        <tr><td>2</td><td>Preparar presentación de equipo</td><td>15/10/2026</td><td><span class="badge badge-progreso">En progreso</span></td></tr>
+        <tr><td>3</td><td>Revisión de código Back-End</td><td>01/10/2026</td><td><span class="badge badge-completada">Completada</span></td></tr>
+        <tr><td>4</td><td>Estudiar para el primer parcial</td><td>17/10/2026</td><td><span class="badge badge-pendiente">Pendiente</span></td></tr>
+        <tr><td>5</td><td>Diseñar wireframes del proyecto final</td><td>24/11/2026</td><td><span class="badge badge-progreso">En progreso</span></td></tr>
+      </tbody>
+    </table>
+    <p class="text-muted small">
+      El cuadro de búsqueda filtra las filas de la tabla en tiempo real usando JavaScript. En la etapa de Back-End
+      este listado se generará dinámicamente a partir de una consulta <strong>SELECT</strong> a la base de datos.
+    </p>
+  </div>
+
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-0">FCA Tareas — Prototipo Front-End · Unidad 3, Actividad Complementaria 1 · Luis Alfredo Illescas Sánchez · Grupo 8691</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FCA Tareas — Acerca de</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-fca">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">FCA Tareas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Iniciar sesión</a></li>
+          <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="formulario.html">Nueva tarea</a></li>
+          <li class="nav-item"><a class="nav-link" href="listado.html">Listado</a></li>
+          <li class="nav-item"><a class="nav-link active" href="acerca.html">Acerca de</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5" style="max-width:720px;">
+    <h2 style="color:var(--azul-fca);">Acerca de FCA Tareas</h2>
+    <p>
+      FCA Tareas es un prototipo funcional de Front-End desarrollado como parte de la Unidad 3 de la asignatura
+      Desarrollo de Aplicaciones Web, de la Licenciatura en Informática del SUAyED, Facultad de Contaduría y
+      Administración, UNAM. Su propósito es demostrar la estructura y la interacción básica de una aplicación web
+      para la gestión de tareas académicas, antes de implementar su lógica de negocio en el Back-End.
+    </p>
+    <h5 class="mt-4">Reflexión sobre el desarrollo</h5>
+    <p>
+      <strong>¿Cómo cambia la experiencia del usuario cuando una página web puede responder a sus acciones
+      (como pasar el mouse o hacer clic) en comparación con una página que solo muestra información estática?</strong>
+    </p>
+    <p>
+      Una página estática únicamente presenta información de forma pasiva: el usuario la lee, pero no recibe
+      ninguna respuesta inmediata ante sus acciones, lo que puede hacer que la navegación se sienta rígida o poco
+      intuitiva (por ejemplo, no sabría si un clic realmente fue registrado hasta que la página completa se
+      recargue). En cambio, en este prototipo, elementos como el resaltado de las tarjetas del Dashboard al pasar
+      el mouse, la validación inmediata del formulario de inicio de sesión, el filtrado en tiempo real del listado
+      de tareas y el saludo dinámico según la hora del día le muestran al usuario, de forma instantánea, que la
+      aplicación está "viva" y reacciona a lo que hace. Esto genera una sensación de control, inmediatez y
+      confianza, ya que el usuario recibe retroalimentación constante sin tener que esperar a que el servidor
+      procese y vuelva a enviar toda la página.
+    </p>
+    <p>
+      <strong>Reflexiona sobre la importancia de JavaScript en el desarrollo profesional, considerando su
+      capacidad para realizar actualizaciones en tiempo real sin necesidad de recargar la página completa.</strong>
+    </p>
+    <p>
+      JavaScript es, hoy en día, prácticamente indispensable en el desarrollo web profesional porque permite
+      manipular el DOM (Document Object Model) directamente desde el navegador, actualizando solo las partes de
+      la página que realmente cambian —como el mensaje de validación de un formulario o las filas visibles de una
+      tabla filtrada— en lugar de recargar el documento completo. Esta capacidad no solo mejora la velocidad
+      percibida de la aplicación, sino que también reduce la carga en el servidor y en la red, ya que muchas
+      interacciones (como la validación de este formulario de login) pueden resolverse del lado del cliente antes
+      de siquiera comunicarse con el Back-End. En el desarrollo profesional, dominar JavaScript —y, más adelante,
+      las peticiones asíncronas hacia una API, que se abordarán en unidades posteriores— es lo que distingue a una
+      página informativa de una verdadera aplicación web interactiva.
+    </p>
+  </div>
+
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-0">FCA Tareas — Prototipo Front-End · Unidad 3, Actividad Complementaria 1 · Luis Alfredo Illescas Sánchez · Grupo 8691</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

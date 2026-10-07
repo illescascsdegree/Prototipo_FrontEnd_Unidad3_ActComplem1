@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FCA Tareas — Nueva tarea</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-fca">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">FCA Tareas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Iniciar sesión</a></li>
+          <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link active" href="formulario.html">Nueva tarea</a></li>
+          <li class="nav-item"><a class="nav-link" href="listado.html">Listado</a></li>
+          <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca de</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5" style="max-width:600px;">
+    <h2 class="mb-4" style="color:var(--azul-fca);">Capturar nueva tarea</h2>
+    <form id="tareaForm" class="card p-4 shadow-sm">
+      <div class="mb-3">
+        <label for="tituloTarea" class="form-label">Título de la tarea</label>
+        <input type="text" class="form-control" id="tituloTarea" placeholder="Ej. Entregar reporte de prácticas">
+      </div>
+      <div class="mb-3">
+        <label for="descripcionTarea" class="form-label">Descripción</label>
+        <textarea class="form-control" id="descripcionTarea" rows="3" placeholder="Detalles de la tarea..."></textarea>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="fechaTarea" class="form-label">Fecha de entrega</label>
+          <input type="date" class="form-control" id="fechaTarea">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="estadoTarea" class="form-label">Estado</label>
+          <select class="form-select" id="estadoTarea">
+            <option value="pendiente">Pendiente</option>
+            <option value="progreso">En progreso</option>
+            <option value="completada">Completada</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-fca w-100">Guardar tarea</button>
+      <div id="tareaResultado" class="d-none"></div>
+    </form>
+    <p class="text-muted small mt-3">
+      Esta captura se valida en el navegador con JavaScript. En la etapa de Back-End (Unidad 4), este formulario se
+      conectará a un controlador que insertará el registro en la base de datos mediante una operación
+      <strong>INSERT</strong>.
+    </p>
+  </div>
+
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-0">FCA Tareas — Prototipo Front-End · Unidad 3, Actividad Complementaria 1 · Luis Alfredo Illescas Sánchez · Grupo 8691</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

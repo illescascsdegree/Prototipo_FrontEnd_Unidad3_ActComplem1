@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FCA Tareas — Iniciar sesión</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-fca">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">FCA Tareas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="login.html">Iniciar sesión</a></li>
+          <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="formulario.html">Nueva tarea</a></li>
+          <li class="nav-item"><a class="nav-link" href="listado.html">Listado</a></li>
+          <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca de</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5" style="max-width:480px;">
+    <h2 class="text-center mb-4" style="color:var(--azul-fca);">Iniciar sesión</h2>
+    <form id="loginForm" class="card p-4 shadow-sm" novalidate>
+      <div class="mb-3">
+        <label for="usuario" class="form-label">Usuario</label>
+        <input type="text" class="form-control" id="usuario" placeholder="tu.usuario">
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="password" placeholder="••••••••">
+      </div>
+      <button type="submit" class="btn btn-fca w-100">Entrar</button>
+      <div id="loginResultado" class="d-none"></div>
+    </form>
+    <p class="text-muted mt-3 small text-center">
+      Este formulario valida los datos con JavaScript del lado del cliente (longitud mínima de usuario y
+      contraseña). En la etapa de Back-End, la autenticación real se validará contra la base de datos del sistema.
+    </p>
+  </div>
+
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-0">FCA Tareas — Prototipo Front-End · Unidad 3, Actividad Complementaria 1 · Luis Alfredo Illescas Sánchez · Grupo 8691</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

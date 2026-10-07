@@ -1,0 +1,80 @@
+:root {
+  --azul-fca: #1F3864;
+  --azul-claro: #2E5395;
+  --acento: #F2A900;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6fa;
+  color: #222;
+}
+
+.navbar-fca {
+  background: var(--azul-fca) !important;
+}
+
+.navbar-fca .navbar-brand,
+.navbar-fca .nav-link {
+  color: #fff !important;
+}
+
+.navbar-fca .nav-link:hover {
+  color: var(--acento) !important;
+}
+
+.navbar-fca .nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: var(--acento);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--azul-fca), var(--azul-claro));
+  color: #fff;
+  padding: 60px 20px;
+  border-radius: 0 0 16px 16px;
+  margin-bottom: 32px;
+}
+
+.card-tarea {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  border-left: 5px solid var(--azul-claro);
+}
+
+.card-tarea:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.btn-fca {
+  background: var(--azul-fca);
+  color: #fff;
+  border: none;
+}
+
+.btn-fca:hover {
+  background: var(--azul-claro);
+  color: #fff;
+}
+
+footer {
+  background: var(--azul-fca);
+  color: #e8eef7;
+  padding: 24px 0;
+  margin-top: 48px;
+}
+
+.badge-pendiente { background: #e67e22; }
+.badge-progreso { background: #2980b9; }
+.badge-completada { background: #27ae60; }
+
+.is-invalid-msg {
+  color: #c0392b;
+  font-size: 0.85em;
+}
+
+#saludoDinamico {
+  font-weight: 600;
+  color: var(--acento);
+}
